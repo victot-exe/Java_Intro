@@ -32,4 +32,12 @@
 * J2SE 5.0 -> Introdução Generics, Enum, Autoboxing, for-each, entre outros
 * JAVA SE 8 -> LambdasExpressions, forEach, Consumer e interfaces no java.util.funcions, Default Methods, Method Reference
 * Java SE 11 -> Metodos para ler e escrever strings em arquivos: `readString()`, `writeString()`, alguns métodos funcionais adicionados.
-* 
+
+## IDE
+integrated development environment  
+* Para agilizar o desenvolvimento de código{
+    * Eclipse
+    * IntelliJ -> Pago
+    * VSCode
+    * NetBeans
+}
