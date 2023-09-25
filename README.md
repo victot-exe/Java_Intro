@@ -52,3 +52,34 @@ public class MyClass {
 * `class` -> diz que está declarando uma class (tipagem forte em java)
 * o código da classe deve ficar entre as chaves{}
 * class que são executáveis tem o método `main` -> `public static void main(String[] args){}`
+## Nomenclatura
+* Todos os arquivos .java devem começar com letra maiúscula e o nome da class deve ter o mesmo nome do arquivo
+* variáveis devem ser nomeadas em camelCase
+* constantes devem ser nomeada em UPPERCASE e usar `final Tipo NOME = valor`
+* o nome deve conter apenas letras, _, $ ou numeros
+* se inicia com letra(preferencialmente), _ ou $, nunca com números
+* não pode conter espaços
+* não usar palavras chave
+* não repetir o nome dentro do escopo
+## Declarando
+### Variáveis
+* `Tipo nomeDaVar = valor`
+* Variaveis `final` -> precisam de um valor definido na sua declaração
+### Métodos
+* `TipoRetorno NomeObjetiivoInfinitivo(Parâmetros){yourCode}`
+* Métodos não podem ser declarados no método main, somente dentro da classe
+~~~
+public class MyClass{
+    
+    public static String nomeCompleto(String primeiroNome, String segundoNome){
+            return primeiroNome.concat(" ").concat(segundoNome);
+        }
+    
+    public static void main(String[] args){
+        
+        System.out.println(nomeCompleto("Victor", "Faria"));
+    }
+}
+~~~
+__Saída ->__ `Victor Faria`
+
