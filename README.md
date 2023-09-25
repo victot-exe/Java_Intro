@@ -83,3 +83,64 @@ public class MyClass{
 ~~~
 __Saída ->__ `Victor Faria`
 
+### Identação
+* Tabular o código para o programa ficar mais visual de forma hierarquica
+* Não interfere na compilação do código (em java)
+__Code s/ identação__
+~~~
+public class BoletimEstudantil{
+    public static void main(String[] args) {
+        
+        int mediaFinal = 6;
+        if(mediaFinal < 6){
+        System.out.println("Reprovado")
+        }else if(mediaFinal == 6){
+        System.out.println("Na casca");
+        else{
+        System.out.println("Aprovado");
+        }
+        }
+    }
+}
+~~~
+__Code c/ identação__
+~~~
+public class BoletimEstudantil{
+    public static void main(String[] args) {
+        
+        int mediaFinal = 6;
+        if(mediaFinal < 6){
+            System.out.println("Reprovado")
+        }else if(mediaFinal == 6){
+            System.out.println("Na casca");
+        else{
+            System.out.println("Aprovado");
+        }
+        }
+    }
+}
+~~~
+* Facilita o entendimento do código e sua hierarquia
+### Organizando arquivos
+* Dividir em pacotes -> SubDiretorios
+* comercial -> com
+* organizacional -> org
+* opensource -> org ou opensource por extenso mesmo
+`com.nomeempresa.projeto.pacotes{depende da função da pasta app, model, etc...}`  
+### Java Beans
+* Estruturação de escrita para facilitar a compreenção
+* variavel deve ser clara
+* no singular, menos quando se referir a uma array ou collection
+* utilizar apenas um idioma
+~~~
+double salarioMedio = 1500.23;
+String email = "aluno@escola.com";
+String[] emails = {"aluno@escola.com", "professor@escola.com"};
+String meuNome = "Victor"
+~~~
+__Metodos__
+* Verbo no infinitivo, camelCase e claro
+~~~
+abrirConexao(){}
+somar(){}
+findById(int id){}
