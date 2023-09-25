@@ -41,3 +41,14 @@ integrated development environment
     * VSCode
     * NetBeans
 }
+
+# Estrutura de classes
+~~~
+public class MyClass {
+    //your code in java
+}
+~~~
+* `public` -> public diz a visibilidade da class, 99% das class serão public
+* `class` -> diz que está declarando uma class (tipagem forte em java)
+* o código da classe deve ficar entre as chaves{}
+* class que são executáveis tem o método `main` -> `public static void main(String[] args){}`
