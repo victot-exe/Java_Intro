@@ -200,5 +200,48 @@ __Aplicados junto a outro operador aritimético para realizar trabalhos básicos
 * `--` -> decremento
 * `!` -> negação => inverte booleans  
 *Incremento e decremento se usados antes primeiro eles usam o valor antigo e depois salvam o novo*
+~~~
+int num = 5;
+num ++;
+System.out.println(++ num);
+boolean variável = false;
+System.out.println(!variavel);//-> a saída é false
+~~~
+### Operador ternário
+__Funciona como um condicional `if` de uma forma que toda a estrutura fique em uma linha__
+* \<Expressão condicional> ? \<Caso `true`> : \<Caso `false`>;
+~~~
+int a, b;
+a = 5;
+b = 6;
 
+String resultado = a == b ? "verdadeiro" : "falso";
+~~~
+### Operadores relacionais
+__Avaliam a relação entre as variáveis e retorna um boolean como resultado__
+* `==` -> igual
+* `!=` -> diferente
+* `>` -> maior que
+* `>=` -> maior ou igual a
+* `<` -> menor que
+* `<=` -> menor ou igual a
+~~~
+int numUm = 1;
+int numDois = 2;
+boolean isEqual = numUm == numDois ? true : false;
+boolean numUmMaior = numUm > numDois ? true : false;
+~~~
+*para comparar objetos é melhor utilizar o .equals() para comparar seus conteúdos*
 
+### Operadores lógicos
+__Permite criar expressões lógicas maiores a partir da junção de duas ou mais expressões__
+* `&&` -> operador lógico AND, E => `true` apenas se todos forem `true`
+* `||` -> operador lógico OR, ou => `true` se pelo menos um for `true`
+
+~~~
+boolean condicaoUm = true;
+boolean condicaoDois = false;
+
+System.out.println(" && " + (condicaoUm && condicaoDois));
+System.out.println(" || " + (condicaoUm || condicaoDois));
+~~~
