@@ -147,3 +147,27 @@ findById(int id){}
 ~~~
 
 ## Tipos e variáveis
+### 8 Tipos primitivos
+__Não são objetos, por isso representam valores brutos, representados diretamente na pilha de memória (Memory stack).__  
+1. `byte` -> min = -128 | max = 127 (memory 1byte)
+2. `short` -> min = -32768 | max = 32767 (memory 2byte)
+3. `int` -> min = -2147483648 | max = 2147483647 (memory 4byte) => tipo mais utilizado a propria vm já tenta colocar tudo em int
+4. `long` -> min = -9223372036854775808 | max = 9223372036854775807 (memory 8byte)
+5. `float` -> min = -3.4028E + 38 | max = 3.4028E + 38 (memory 4byte)
+6. `double` -> min = -1.7976E + 308 | max = 1.7976E + 308 (memory 8byte) => tipo mais utilizado para pontos flutuantes.
+7. `boolean` -> `true` ou `false`
+8. `char`  -> caractere `'x'`
+### Declarando variáveis
+* \<tipo> \<nome> = \<atribuicaoDoValorOpcional>
+~~~
+int age;//sem definir a var recebe o valor default = 0
+int anoFabricacao = 2021;
+double salarioMinimo = 2500.33;//usa o ponto e não a virgula
+~~~
+* Quando se declara um `float` a var deve ser declarada -> `float pi = 3.14F` se não o programa entende que deveria ser um `double` e da erro.
+* O mesmo vale para o tipo `long` só que com a letra L -> `long numero = 312L` se não o programa entende como um `int`
+___Variáveis x Constantes__  
+* constantes -> valores armazenados na memória que não podem ser alterados a palavra reservada para a sua declaração é `final` -> `final int UM = 1;`
+
+
+
