@@ -166,8 +166,39 @@ double salarioMinimo = 2500.33;//usa o ponto e não a virgula
 ~~~
 * Quando se declara um `float` a var deve ser declarada -> `float pi = 3.14F` se não o programa entende que deveria ser um `double` e da erro.
 * O mesmo vale para o tipo `long` só que com a letra L -> `long numero = 312L` se não o programa entende como um `int`
-___Variáveis x Constantes__  
+__Variáveis x Constantes__  
 * constantes -> valores armazenados na memória que não podem ser alterados a palavra reservada para a sua declaração é `final` -> `final int UM = 1;`
 
+## Operadores
+__Simbolos especiais que estão associadas a determinadas funções__
+* Operador de atribuição `=` -> atribui ou altera o valor de uma var:
+~~~
+String name = "Nome";
+int age = 22;
+double weight = 68.5;
+age = 24;
+~~~
+### Operadores aritméticos
+* `+` -> adição  
+* `-` -> subtração  
+* `*` -> multiplicação  
+* `/` -> divisão  
+* `%` -> resto de divisão/módulo
+~~~
+int soma = 3 + 1;
+int sub = 3 - 1;
+int mult = 3 * 1;
+int div = 15 / 3;
+int mod = 18 % 3;
+double resultao = (10 * 7) + (20 / 4)
+~~~
+*o operador `+` quando usado em tipo `String` tem a função de concatenar (juntar) `String nomeCompleto = "Linguagem" + "Java"`*
+
+### Operadores unários
+__Aplicados junto a outro operador aritimético para realizar trabalhos básicos como: incrementar, decrementar, inverter valores e booleans__  
+* `++` -> incremento
+* `--` -> decremento
+* `!` -> negação => inverte booleans  
+*Incremento e decremento se usados antes primeiro eles usam o valor antigo e depois salvam o novo*
 
 
