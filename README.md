@@ -245,3 +245,35 @@ boolean condicaoDois = false;
 System.out.println(" && " + (condicaoUm && condicaoDois));
 System.out.println(" || " + (condicaoUm || condicaoDois));
 ~~~
+
+## Sintaxe de métodos
+__Uma ação executada pela classe__
+* O que o método deve fazer?
+* Qual o retorno esperado?
+* Quais os parâmetros esperados para a execução do método?
+* Pode apresentar alguma `Exception`?
+* Qual a visibilidade do método? _ainda vai falar sobre_
+
+### Critérios de nomenclatura
+_não obrigatórios_
+* Deve ser nomeado como um verbo
+* camelCase  
+
+### Declaração de métodos
+* __Em java não temos métodos globais, todo método deve pertencer a uma classe__  
+* __Métodos não podem ser declarados dentro do `main`__
+DeclararAClasse{
+
+    \<visibilidade> \<tipo_de_retorno> \<nomeDoMetodo>(\<parâmetros>){  
+        //\<lógica do método>  
+        \<return> caso o tipo do método não for `void`  
+    }  
+}
+~~~
+public class MyClass{
+
+    public double somar(int num1, int){
+        int resultado = num1 + num2;
+        return resultado;
+    }
+}
