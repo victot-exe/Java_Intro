@@ -144,3 +144,6 @@ __Metodos__
 abrirConexao(){}
 somar(){}
 findById(int id){}
+~~~
+
+## Tipos e variáveis
