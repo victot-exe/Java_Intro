@@ -330,4 +330,33 @@ __52 Palavras reservadas, são identificadores que já possuem uma finalidade de
 * `break` -> sai do bloco de código em que ele está
 * `case` -> executa um bloco de código dependendo do teste do `switch`
 * `continue` -> pula o restante da repetição do loop atual e pula para a próxima repetição do loop
-* parou em 8:24
+* `default` -> executa esse bloco caso nenhum dos teste `switch/case` de `true`
+* `do` -> executa o bloco de código para depois executar um teste do `while`
+* `else` -> bloco de código para caso o `if` de `false`
+* `for` -> loop condicional para repetição de código
+* `if` -> controle de fluxo se, retorna `true` or `false`
+* `instanceof` -> determina que um objeto é uma instancia de
+* `return` -> retorno de um método sem executar qualquer código
+* `switch` -> indica a variavel comparada com um valor para as condições `case`
+* `while` -> repete um bloco de código enquanto a condição for `true`
+
+### Tratamento de erros
+* `assert` -> testa uma expressão condicional para verificar uma suposição do programador
+* `catch` -> bloco de código usado para tratar uma `Exception`
+* `finally` -> bloco de código que é executado após o `try/catch` independe do fluxo de código usado para tratar a `exception`
+* `throw` -> lança uma `Exception` para o método que a chamou
+* `throws` -> indica que o método pode passar uma `Exception`
+* `try` -> tentativa de bloco de execução que pode causar uma `Exception`
+
+### Variáveis de referência
+* `super` -> refere-se a superclasse imediata
+* `this` -> refere-se a instancia atual do objeto
+
+### Não utilizadas
+* `const` -> use `public static final`
+* `goto` -> é considerada prejudicial
+
+### Literais reservados
+* `null` -> nulo
+* `true` -> verdade
+* `false` -> falso
