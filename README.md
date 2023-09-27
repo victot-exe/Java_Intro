@@ -277,3 +277,57 @@ public class MyClass{
         return resultado;
     }
 }
+~~~
+
+## Escopo
+__Ambiente que a var pode ser acessada__
+* Em java o escopo é o bloco onde a var foi declarada
+* Se é de classe ela pode ser acessada por toda a classe, se é local (como interna de um método ela não pode ser acessada fora do mesmo)
+* Identidicar a localização mais conveniente para a escrita de algoritmos necessários para o nosso programa  
+
+## Palavras resevadas
+__52 Palavras reservadas, são identificadores que já possuem uma finalidade definida e não podem ser usadas para nomear variáveis, classes, métodos ou atributos__  
+* classificadas em grupos
+* são todas em letras minusculas
+* ficam em cor diferente na maioria das IDEs
+
+### Controle de pacotes
+* `import` -> importa classes ou pacotes para o código
+* `package` -> especifica qual pacote aquela classe pertence (toda a classe pertence a um `package`)
+
+### Modificadores de acesso
+* `public` -> deixa a var ou método público
+* `private` -> só deixa visível dentro da classe
+* `protected` -> visível apenas no `package` e em subclasses
+
+### Tipos primitivos
+* `byte` -> min = -128 | max = 127 (memory 1byte)
+* `short` -> min = -32768 | max = 32767 (memory 2byte)
+* `int` -> min = -2147483648 | max = 2147483647 (memory 4byte) => tipo mais utilizado a propria vm já tenta colocar tudo em int
+* `long` -> min = -9223372036854775808 | max = 9223372036854775807 (memory 8byte)
+* `float` -> min = -3.4028E + 38 | max = 3.4028E + 38 (memory 4byte)
+* `double` -> min = -1.7976E + 308 | max = 1.7976E + 308 (memory 8byte) => tipo mais utilizado para pontos flutuantes.
+* `boolean` -> `true` ou `false`
+* `char`  -> caractere `'x'`
+* `void` -> indica que o método não tem retorno de valor
+
+### Modificadores de classes, variáveis ou métodos
+* `abstract` -> classe que não pode ser instanciada e precisa ser implementada por uma subclasse não abstrata
+* `class` -> indica que é uma classe
+* `extends` -> indica a superclasse que a subclasse está estendendo
+* `final` -> define constantes(variáveis que não podem ser reiniciadas, classe não pode ser extendida, um método que não pode ser sobrescrito)
+* `implements` -> indica interfaces que uma classe irá implementar
+* `interface` -> indica uma interface
+* `native` -> indica que um método está escrito em uma linguagem dependente de plataforma como o C
+* `new` -> instancia um novo objeto, chama o construtor
+* `static` -> faz uma classe pertencer a classe ao invés de as instâncias
+* `strictfp` -> strict float point indica que o método, var, class seguira as regras de ponto flutuante
+* `synchronized` -> indica que o método só pode ser acessado por uma thread de cada vez
+* `transient` -> impede a serialização de campos
+* `volatile` -> indica que uma variável pode ser alterada durante o uso de threads
+
+### Controle de fluxo dentro de um bloco de código
+* `break` -> sai do bloco de código em que ele está
+* `case` -> executa um bloco de código dependendo do teste do `switch`
+* `continue` -> pula o restante da repetição do loop atual e pula para a próxima repetição do loop
+* parou em 8:24
