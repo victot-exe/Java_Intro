@@ -199,3 +199,16 @@ public class SistemaIBGE {
 * Diagramas -> representação gráfica => diagramas de classe x diagrama de objetos
 * Elementos -> 
 * Relacionamentos
+
+## Pilares da POO
+### Encapsulaento
+**Nem tudo precisa estar visível (public, protected e private), deixar visível apenas o necessário**  
+### Herança
+**Caracteristicas e comportamentos comuns pode ser herdado através da hierarquia(`extends`, `implements`)**
+### Abstração
+**Trazer do mundo real para a programação**  
+**Classes abstratas para serem implementadas depois**  
+### Polimorfismo
+**Varias maneiras para a mesma ação** -> cada implementação tem uma forma diferente para implementar o mesmo método  
+### Interfaces
+**Contratos que precisam ser cumpridos, são classes abstratas que tem métodos que devem ser implementados `implements`**
