@@ -16,5 +16,6 @@ public class Almoxarife {
 	
 	void levarXingo() {
 		System.out.println("Escutando quieto!");
+		this.fazerPedido();
 	}
 }
