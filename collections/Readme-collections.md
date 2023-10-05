@@ -134,3 +134,27 @@ class CompararAnoAutorTitulo implements Comparator<Livro> {
 	}
 }
 ~~~
+## List
+**É uma coleção ordenada que permite elementos duplicados**  
+* Os elementos são armazenados na ordem que colocamos
+* As classes mais comuns são as `ArrayList` e a `LinkedList`
+* != da Array o número de elementos não é fixo, é dinâmico.
+* Usamos os índices para adicionar, remover e manipular elementos
+* Métodos úteis => `sort()`, `shuffle()`, `reverse()`, `binarySearch()`
+
+### ArrayList
+* Implementa os elementos em um array redmensionável(que o tamanho pode mudar)
+* Vantagem => rapidez ao acessar os elementos por meio do índice
+* Adcionar elementos no meio ou começo da `list` pode demorar um pouco devido a realocação dos outros elementos.
+
+### LinkedList
+* Implementa os elementos em um array redmensionável(que o tamanho pode mudar)
+* Os elementos são duplamente vinculados => cada elemento contém referências para o anterior e o próximo elemento.
+* Adicionar os elementos no meio e no começo não exige realocação (é mais rápido)
+* Encontrar o elemento pelo índice demora mais já que a list vai precisar ser percorrida do começo até o elemento desejado.
+
+### Vector
+* Uma aplicação antiga da `ArrayList` porém é sincronizada (thread-safe)
+* Varias threads podem manipular o vetor sem causar problemas de concorrência
+* A sincronização causa uma sobrecarga de desempenho
+* Menos eficiente do que a `ArrayList`
