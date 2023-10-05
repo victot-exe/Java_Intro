@@ -141,6 +141,7 @@ class CompararAnoAutorTitulo implements Comparator<Livro> {
 * != da Array o número de elementos não é fixo, é dinâmico.
 * Usamos os índices para adicionar, remover e manipular elementos
 * Métodos úteis => `sort()`, `shuffle()`, `reverse()`, `binarySearch()`
+* [Exemplos](src/list/)
 
 ### ArrayList
 * Implementa os elementos em um array redmensionável(que o tamanho pode mudar)
