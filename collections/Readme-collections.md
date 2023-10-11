@@ -135,13 +135,12 @@ class CompararAnoAutorTitulo implements Comparator<Livro> {
 }
 ~~~
 ## List
-**É uma coleção ordenada que permite elementos duplicados**  
+**É uma coleção ordenada que permite elementos duplicados** [Exemplos](src/list/)
 * Os elementos são armazenados na ordem que colocamos
 * As classes mais comuns são as `ArrayList` e a `LinkedList`
 * != da Array o número de elementos não é fixo, é dinâmico.
 * Usamos os índices para adicionar, remover e manipular elementos
 * Métodos úteis => `sort()`, `shuffle()`, `reverse()`, `binarySearch()`
-* [Exemplos](src/list/)
 
 ### ArrayList
 * Implementa os elementos em um array redmensionável(que o tamanho pode mudar)
@@ -159,3 +158,22 @@ class CompararAnoAutorTitulo implements Comparator<Livro> {
 * Varias threads podem manipular o vetor sem causar problemas de concorrência
 * A sincronização causa uma sobrecarga de desempenho
 * Menos eficiente do que a `ArrayList`
+
+## Set
+**Colection que não pode conter elementos duplicados**
+* Representa o conceito de conjuntos (matemática), como o baralho de cartas
+* Não permite um acesso aleatório a um elemento
+* Para percorrer usa iterador ou forEach
+
+### HashSet
+* Armazena os elementos em uma tabela `hash`
+* Alto desempenho por usar a função hash para para idexar os elementos
+* A ordem dos elementos pode não ser preservada
+
+### TreeSet
+* Armazena os elementos em uma árvore binária balanceada
+* Os elementos são mantidos automaticamente em ordem crescente - Sendo assim os elementos sempre são retornados na ordem classificada
+* Busca e inserção mais lentos se comparado ao HashSet
+
+### LinkedHashSet
+* É uma implementação que mantém a ordem de inserção e usa uma tabela hash para obter o desempenho de busca
