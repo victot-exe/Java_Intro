@@ -5,3 +5,4 @@ __Manipulação de collections para java seguindo os princípios do paradigma fu
 * declaração `argumento -> corpo`
 ## Method Reference
 __Recurso que permite que seja referênciado um método ou um construtor de uma outra classe de forma funcional__
+### @FuncionalInterface
